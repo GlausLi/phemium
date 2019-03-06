@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>Test plugin</title>
+  <link rel="stylesheet" type="text/css" href="ionic.min.css">
+</head>
+<body style="margin-top:60px">
+
+  <div class="bar bar-header bar-balanced">
+    <h1 class="title">Plugin Test App</h1>
+  </div>
+
+  <label class="item item-input item-select ">
+    <span class="input-label">Environment</span>
+    <select id="environment">
+      <option value="devel">Phemium Devel</option>
+      <option value="dev">Phemium Dev</option>
+      <option value="integra">Phemium Integra</option>
+      <option value="prerelease">Phemium Prerelease</option>
+      <option value="live">Phemium Live</option>
+      <option value="luxmed-dev">Luxmed Dev</option>
+      <option value="luxmed-preproduction">Luxmed Preproduction</option>
+      <option value="luxmed-production">Luxmed Production</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-select ">
+    <span class="input-label">Theme</span>
+    <select id="theme">
+      <option value="aegon">Aegon</option>
+      <option value="asisa">Asisa</option>
+      <option value="allianz">Allianz</option>
+      <option value="asepeyo">Asepeyo</option>
+      <option value="asmedit">Asmedit</option>
+      <option value="assegur">Assegur</option>
+      <option value="boadilla">Boadilla</option>
+      <option value="catalanaoccidente">Catalana Occidente</option>
+      <option value="cigna">Cigna</option>
+      <option value="cun">CUN</option>
+      <option value="csi">CSI</option>
+      <option value="doctux">Doctux</option>
+      <option value="dorsia">Dorsia</option>
+      <option value="e3">E3</option>
+      <option value="ics">ICS</option>
+      <option value="ips24">IPS24</option>
+      <option value="liberbank">Liberbank</option>
+      <option value="grupa-luxmed">Luxmed</option>
+      <option value="movistar_f2fplus">Movistar F2F Plus</option>
+      <option value="nutrigen">Nutrigen</option>
+      <option value="osde">Osde</option>
+      <option value="phemium">Phemium</option>
+      <option value="pratiscare">Pratiscare</option>
+      <option value="prosegur">Prosegur</option>
+      <option value="quironsalud">Quiron Salud</option>
+      <option value="r_debre">R Debre</option>
+      <option value="racc">RACC</option>
+      <option value="sanitas">Sanitas</option>
+      <option value="sanitasf2f">Sanitas F2F</option>
+      <option value="securitasdirect">Securitas Direct</option>
+      <option value="tupediatraonline">Tu Pediatra Online</option>
+      <option value="ver2">Ver2</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Enduser token</span>
+    <input id="enduser_token" />
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Portal Name</span>
+    <input id="portal_name" />
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Service ID</span>
+    <input id="service_id" />
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Consultation ID</span>
+    <input type="number" id="consultation_id" />
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Customer ID</span>
+    <input type="number" id="customer_id" />
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Action</span>
+    <input id="action" />
+  </label>
+
+  <label class="item item-input item-select ">
+    <span class="input-label">Language</span>
+    <select id="lng">
+      <option value="">Portal Default</option>
+      <option value="es">Español</option>
+      <option value="en">English</option>
+      <option value="pl">Polski</option>
+      <option value="ca">Català</option>
+      <option value="fr">Français</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-select">
+    <span class="input-label">Use TLS?</span>
+    <select id="tls">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-select">
+    <span class="input-label">Face2Face</span>
+    <select id="face2face">
+      <option value="false">No</option>
+      <option value="true">Yes</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-select">
+    <span class="input-label">Use CallKit</span>
+    <select id="extraUseCallkit">
+      <option value="false">No</option>
+      <option value="true">Yes</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-select">
+    <span class="input-label">VoIP Push Notifications</span>
+    <select id="voip_notifications">
+      <option value="false">No</option>
+      <option value="true">Yes</option>
+    </select>
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">VoIP Device token</span>
+    <input type="text" id="voip_token" />
+  </label>
+
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Return URL</span>
+    <input id="origin_url" placeholder="http://localhost:8080/..."/>
+  </label>
+
+  <button class="button button-block button-positive" onclick="App.start_voip_notifications();">
+    Register VoIP in testapp
+  </button>
+
+  <button class="button button-block button-positive" onclick="App.openPhemium();">
+    Open
+  </button>
+
+  <div class="item item-divider">
+    Installed plugins
+  </div>
+
+  <ul class="list" id="plugin-list"></ul>
+
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript">
+
+    //Hide splashscreen and start testApp
+    document.addEventListener( 'deviceready', function()
+    {
+      navigator.splashscreen.hide();
+      App.start();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "plist": "3.0.0",
+    "shelljs": "^0.8.3",
+    "xcode": "^2.0.0"
+  }
+}

@@ -1,0 +1,62 @@
+﻿{
+	"en": {
+		"connecting": "Connecting...",
+		"calling": "Calling...",
+		"calling_mute": "Mute",
+		"calling_speaker": "Speaker",
+		"recording": "The call is being recorded",
+		"registering": "Login...",
+		"establishing": "Establishing Call...",
+		"retrying": "Retrying Call...",
+		"ending": "Releasing Call...",
+		"low_signal_alert": "There are problems with the network"
+	},
+	"es": {
+		"connecting": "Conectando...",
+		"calling": "Llamando...",
+		"calling_mute": "Silenciar",
+		"calling_speaker": "Altavoz",
+		"recording": "La conversación se está grabando",
+		"registering": "Registrando...",
+		"establishing": "Estableciendo llamada...",
+		"retrying": "Reintentando llamada...",
+		"ending": "Finalizando llamada...",
+		"low_signal_alert": "Existen problemas de red"
+	},
+	"fr": {
+		"connecting": "Connection en cours...",
+		"calling": "Appel en cours...",
+		"calling_mute": "Mettre en silencieux",
+		"calling_speaker": "Haut-parleur",
+		"recording": "La conversation est en cours d'enregistrement",
+		"registering": "Ouverture de session...",
+		"establishing": "Etablisement d'appel...",
+		"retrying": "Nouvel essai en cours...",
+		"ending": "Fin d'appel...",
+		"low_signal_alert": "Le signal réseau est faible"
+	},
+	"pl": {
+		"connecting": "Podłączanie...",
+		"calling": "Dzwoni...",
+		"calling_mute": "Wycisz",
+		"calling_speaker": "Głośnik",
+		"recording": "Nagrywanie",
+		"registering": "Rejestrowanie...",
+		"establishing": "Nawiązywanie połączenia...",
+		"retrying": "Ponawianie połączenia...",
+		"ending": "Połączenie wychodzące...",
+		"low_signal_alert": "Występują problemy z połączeniem"
+	},
+	"ca": {
+		"connecting": "Connectant...",
+		"calling": "Trucant...",
+		"calling_mute": "Silenciar",
+		"calling_speaker": "Altaveu",
+		"recording": "La conversació s'està gravant",
+		"registering": "Registrant-se...",
+		"establishing": "Establint trucada...",
+		"retrying": "Reintentant trucada...",
+		"ending": "Finalitzant trucada...",
+		"low_signal_alert": "Hi ha problemes de xarxa"
+	}
+}
